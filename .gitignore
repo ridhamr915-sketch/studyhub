@@ -6,6 +6,7 @@ __pycache__/
 # Environment Files
 *.env.local
 backend/data/*.json
+data/*.json
 backend/uploads/*
 !backend/uploads/sample_dsa_unit1.txt
 

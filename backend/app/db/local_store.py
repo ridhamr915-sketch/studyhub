@@ -5,7 +5,10 @@ from datetime import datetime, date
 from typing import Dict, List, Any, Optional
 
 class LocalDatabaseStore:
-    def __init__(self, filepath: str = "backend/data/studyhub_store.json"):
+    def __init__(self, filepath: Optional[str] = None):
+        if filepath is None:
+            base = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+            filepath = os.path.join(base, "data", "studyhub_store.json")
         self.filepath = filepath
         os.makedirs(os.path.dirname(self.filepath), exist_ok=True)
         self.data: Dict[str, Any] = {
