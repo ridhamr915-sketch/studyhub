@@ -1,0 +1,47 @@
+--- [Page 1] ---
+DATA STRUCTURES & ALGORITHMS - UNIT 1: LINEAR DATA STRUCTURES
+Course Code: CS-201 | B.Tech CSE Semester 4
+
+1. LINKED LISTS OVERVIEW
+A Linked List is a linear collection of data elements where linear order is given by pointers.
+Each node contains two components:
+- Data Field: Stores the actual data item.
+- Next Pointer: Stores the memory address of the next contiguous/non-contiguous node.
+
+Advantages over Arrays:
+1. Dynamic memory size: No fixed size limitation at compile time.
+2. Ease of insertion and deletion: No element shifting required, O(1) time if pointer known.
+3. Memory efficiency: Allocates only the exact space required.
+
+Disadvantages:
+1. Sequential access: Cannot access elements directly using an index like arr[i]. O(n) search time.
+2. Memory overhead: Extra memory required for storing pointer addresses.
+
+--- [Page 2] ---
+2. STACKS (LIFO - LAST IN FIRST OUT)
+A Stack is an abstract data type with two principal operations:
+- push(x): Adds an element to the top of the stack.
+- pop(): Removes and returns the most recently added element from the top.
+- peek()/top(): Inspects the element on top without removing it.
+
+Time Complexities:
+- Push: O(1)
+- Pop: O(1)
+- Peek: O(1)
+
+Applications of Stacks:
+1. Function Call Recursion Stack in compilers and runtimes.
+2. Expression Evaluation and Syntax Parsing (Infix to Postfix conversion).
+3. Backtracking algorithms (e.g. Maze navigation, DFS).
+4. Undo/Redo operations in text editors.
+
+--- [Page 3] ---
+3. QUEUES (FIFO - FIRST IN FIRST OUT)
+A Queue maintains elements in FIFO order:
+- enqueue(x): Inserts element at the rear pointer.
+- dequeue(): Removes element from the front pointer.
+
+Circular Queue Condition:
+A standard linear queue suffers from memory wastage when front advances. A Circular Queue connects the last position back to the first.
+Condition for Queue Full: (rear + 1) % capacity == front.
+Condition for Queue Empty: front == -1 or front == rear.

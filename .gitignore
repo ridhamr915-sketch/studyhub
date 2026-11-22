@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment Files
+*.env.local
+backend/data/*.json
+backend/uploads/*
+!backend/uploads/sample_dsa_unit1.txt
+
+# Build Artifacts
+frontend/dist/
+frontend/.vite/
+
+# System Files
+.DS_Store
+Thumbs.db
